@@ -36,3 +36,7 @@ jobs:
       with:
         arguments: createDmg
         
+    - name Upload Artefact
+    - uses: actions/upload-artifact@v3
+    with:
+      path: build/distributions
