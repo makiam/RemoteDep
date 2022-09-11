@@ -1,6 +1,10 @@
+plugins {
+    id "edu.sc.seis.macAppBundle" version "2.3.0"
+}
+
 apply plugin: 'java'
 apply plugin: 'jacoco'
-
+apply plugin: 'application'
 
 
 
@@ -10,3 +14,14 @@ repositories {
 
 group = 'org.buoy'
 version = '1.0.0'
+
+description = 'ArtOfIllusion'
+mainClassName = 'app.Application'
+
+macAppBundle {
+    mainClassName = "app.Application"
+    bundleJRE = false
+    javaProperties.put("apple.laf.useScreenMenuBar", "true")
+
+    runtimeConfigurationName = 'runtimeClasspath'
+}
