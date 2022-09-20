@@ -24,4 +24,5 @@ macAppBundle {
     javaProperties.put("apple.laf.useScreenMenuBar", "true")
 
     runtimeConfigurationName = 'runtimeClasspath'
+    bundleExecutable = 'universalJavaApplicationStub'
 }
